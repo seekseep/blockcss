@@ -1,0 +1,49 @@
+.block
+    background-color: #DDD
+    width 1em
+    height 1em
+
+    &, &::before, &::after
+        position absolute
+
+    &::before, &::after
+        content ""
+        display block
+
+    &::before
+        background-color: #EEE
+        left 0
+        top 100%
+        width 1em
+        height 1em
+        transform-origin left top
+        transform rotateX(-90deg) rotateY(0deg) rotateZ(0deg)
+
+    &::after
+        background-color: #CCC
+        left 100%
+        bottom 0
+        width 1em
+        height 1em
+        transform-origin left bottom
+        transform rotateX(0deg) rotateY(90deg) rotateZ(0deg)
+
+
+for width in (1..100)
+    .block.width_{width}
+        width width em
+        &::before
+            width width em
+
+for height in (1..100)
+    .block.height_{height}
+        height height em
+        &::after
+            height height em
+
+for depth in (1..100)
+    .block.depth_{depth}
+        &::before
+            height depth em
+        &::after
+            width depth em

@@ -1,0 +1,12 @@
+{
+  "name": "blockcss",
+  "version": "0.0.1",
+  "description": "Block CSS",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "grunt": "~1.0.1",
+    "grunt-contrib-stylus": "^1.2.0",
+    "grunt-contrib-watch": "~1.0.0"
+  }
+}

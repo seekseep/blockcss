@@ -1,0 +1,24 @@
+for x in (0..100)
+    .block.x_{x},.blocks.x_{x}
+        margin-left x em
+
+for y in (0..100)
+    .block.y_{y},.blocks.y_{y}
+        margin-top - y em
+
+for z in (0..100)
+    .block.z_{z},.blocks.z_{z}
+        transform translateX(0em) translateY(0 em) translateZ(- z em)
+
+
+for x in (-1..-100)
+    .block.x_{x},.blocks.x_{x}
+        margin-left x em
+
+for y in (-1..-100)
+    .block.y_{y},.blocks.y_{y}
+        margin-top - y em
+
+for z in (-1..-100)
+    .block.z_{z},.blocks.z_{z}
+        transform translateX(0em) translateY(0 em) translateZ(- z em)

@@ -1,0 +1,22 @@
+.world, & *, & *::before, & *::after
+    transform-style preserve-3d
+    z-index: 1
+
+.world
+    font-size 20px
+    position relative
+    width 300px
+    height 300px
+    display inline-block
+    transform-origin center center
+    transform rotateX(45deg) rotateY(0deg) rotateZ(45deg)
+
+    &>.block,
+    &>.blocks
+        position absolute
+        top 50%
+        left 50%
+
+for size in (10..100)
+    .world.size-{size}
+        font-size size px
